@@ -135,3 +135,37 @@ helpButton.textContent = "Press me for help"
 helpButtonLink.appendChild(helpButton)
 
 
+let practiceButton = document.createElement('button')
+practiceButton.textContent = "Practice"
+practiceButton.onclick = function practiceB () {
+    window.open('https://www.grammarly.com/blog/idk-meaning/', target="_blank")
+}
+document.body.appendChild(practiceButton)
+
+let randomSpan = document.createElement('span')
+let h1random = document.createElement('h1')
+h1random.textContent = "This is even funner than life!"
+h1random.appendChild(randomSpan)
+document.body.appendChild(h1random)
+h1random.classList.add('anotherColor')
+
+let addPic = document.createElement('img')
+addPic.src = "mountain.jpeg"
+document.body.appendChild(addPic)
+
+let addAnotherButton = document.createElement('button')
+addAnotherButton.textContent = "Mountains!"
+addAnotherButton.onclick = function mountain () {
+    window.open('https://www.google.com/search?q=mountain&rlz=1C5CHFA_enUS814US815&sxsrf=ACYBGNRoJ2S9f9hwWFR_LRiw3ur2_KXXTQ:1575924973035&source=lnms&tbm=isch&sa=X&ved=2ahUKEwis7NaBuqnmAhVL7J4KHRN6BJwQ_AUoAXoECBMQAw&biw=666&bih=792#imgrc=V8KzvYV6KU5JSM', target="_blank")
+}
+document.body.appendChild(addAnotherButton)
+
+addAnotherButton.classList.add('anotherColor')
+
+let funButton = document.createElement('button')
+funButton.textContent = "Beastars!"
+funButton.onclick = function beastarsFunc () {
+    window.open('https://www.reddit.com/r/Beastars/', target="_blank")
+}
+document.body.appendChild(funButton)
+funButton.classList.add('picture', 'anotherColor')
