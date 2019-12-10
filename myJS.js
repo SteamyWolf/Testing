@@ -224,3 +224,31 @@ dragonButt.addEventListener('click', dragonFunc)
 function dragonFunc () {
     document.body.appendChild(dragonImage)
 }
+
+box = document.createElement('p')
+box.textContent = "Mouse over me...please?"
+document.body.appendChild(box)
+box.addEventListener('mouseover', boxy)
+function boxy () {
+    box.classList.add('hover')
+}
+
+let furryButton = document.createElement('button')
+let furryImg = document.createElement('img')
+furryImg.src = "legoshi.jpg"
+furryButton.textContent = "WHY?"
+document.body.appendChild(furryButton)
+furryButton.addEventListener('click', furry)
+function furry () {
+    document.body.appendChild(furryImg)
+}
+
+let bruh = document.createElement('img')
+let pikaButton = document.createElement('button')
+pikaButton.textContent = "Pika?"
+bruh.src = "tenor.gif"
+document.body.appendChild(pikaButton)
+pikaButton.addEventListener('click', pika)
+function pika () {
+    document.body.appendChild(bruh)
+}

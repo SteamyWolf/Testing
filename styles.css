@@ -13,3 +13,7 @@
 .anotherColor {
     color: blue
 }
+
+.hover {
+    border: 400px solid red
+}
