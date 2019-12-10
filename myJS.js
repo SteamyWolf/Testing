@@ -185,3 +185,7 @@ function sumFunc() {
     sum2.textContent = boxAdd + boxAdd2;
 
 }
+
+let date = document.querySelector('#date')
+date.textContent = new Date()
+
