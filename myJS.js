@@ -1,3 +1,8 @@
+function pageLoad () {
+    alert("Welcome to this amazing Website!")
+}
+pageLoad()
+
 let my_element = document.createElement('h1')
 let my_span = document.createElement('span')
 my_span.innerText = "Hi, this is fun";
@@ -196,4 +201,26 @@ testh2.appendChild(appendSpan)
 testh2.classList.add('anotherColor')
 document.body.appendChild(testh2)
 
+let dwarfImage = document.createElement('img')
+let dwarfButton = document.createElement('button')
+let dwarfText = document.createElement('p')
+dwarfText.textContent = "Interest ya on a pint?"
+dwarfButton.textContent = "Want a Dwarf?"
+dwarfImage.src = "Dwarfguard.jpg"
+document.body.appendChild(dwarfButton)
 
+dwarfButton.addEventListener('click', dwarfAdd)
+function dwarfAdd () {
+    document.body.appendChild(dwarfImage)
+    document.body.appendChild(dwarfText)
+}
+
+let dragonImage = document.createElement('img')
+dragonImage.src = "dragonGif.gif"
+let dragonButt = document.createElement('button')
+dragonButt.textContent = "How about some Flying Dragons?"
+document.body.appendChild(dragonButt)
+dragonButt.addEventListener('click', dragonFunc)
+function dragonFunc () {
+    document.body.appendChild(dragonImage)
+}
