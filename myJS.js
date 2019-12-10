@@ -169,3 +169,19 @@ funButton.onclick = function beastarsFunc () {
 }
 document.body.appendChild(funButton)
 funButton.classList.add('picture', 'anotherColor')
+
+
+let anotherOne = document.querySelector('#addAnother1')
+let anotherTwo = document.querySelector('#addAnother2')
+let sum2 = document.querySelector('#sumAnother')
+
+anotherOne.addEventListener('input', sumFunc)
+anotherTwo.addEventListener('input', sumFunc)
+
+function sumFunc() {
+    let boxAdd = parseFloat(anotherOne.value) || 0;
+    let boxAdd2 = parseFloat(anotherTwo.value) || 0;
+    console.log(sum2)
+    sum2.textContent = boxAdd + boxAdd2;
+
+}
