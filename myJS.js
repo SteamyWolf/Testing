@@ -189,3 +189,11 @@ function sumFunc() {
 let date = document.querySelector('#date')
 date.textContent = new Date()
 
+let testh2 = document.createElement('h2')
+let appendSpan = document.createElement('span')
+testh2.textContent = "Keep up the grind!"
+testh2.appendChild(appendSpan)
+testh2.classList.add('anotherColor')
+document.body.appendChild(testh2)
+
+
