@@ -282,3 +282,22 @@ document.body.appendChild(newButton)
 newButton.onclick = function legoshi () {
     document.body.appendChild(legoImg)
 }
+
+let libraryButton = document.createElement('button')
+libraryButton.textContent = "More and More!"
+let libraryImg = document.createElement('img')
+libraryImg.src = "juno.gif"
+document.body.appendChild(libraryButton)
+libraryButton.onclick = function juno () {
+    document.body.appendChild(libraryImg)
+}
+
+let trainLego = document.createElement('button')
+trainLego.textContent = "Okay, one more!"
+let trainLegoImg = document.createElement('img')
+document.body.appendChild(trainLego)
+trainLegoImg.src = "trainLego.gif"
+trainLego.addEventListener('click', train)
+function train () {
+    document.body.appendChild(trainLegoImg)
+}
