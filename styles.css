@@ -7,13 +7,22 @@
 }
 
 .beautifulColor {
-    color: pink
+    color: pink;
 }
 
 .anotherColor {
-    color: blue
+    color: blue;
 }
 
 .hover {
-    border: 400px solid red
+    border: 400px solid red;
+}
+
+.button {
+    color: blue;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
 }

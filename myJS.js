@@ -277,6 +277,7 @@ let newButton = document.createElement('button')
 let legoImg = document.createElement('img')
 legoImg.src = "innerTurmoil.png"
 newButton.textContent = "Legosi"
+newButton.classList.add('button')
 document.body.appendChild(newButton)
 newButton.onclick = function legoshi () {
     document.body.appendChild(legoImg)
