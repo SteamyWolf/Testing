@@ -252,3 +252,23 @@ pikaButton.addEventListener('click', pika)
 function pika () {
     document.body.appendChild(bruh)
 }
+
+let nightImg = document.createElement('img')
+let beastButton = document.createElement('button')
+beastButton.textContent = "Mad Beast"
+nightImg.src = "beast.gif"
+document.body.appendChild(beastButton)
+beastButton.addEventListener('click', beast)
+function beast () {
+    document.body.appendChild(nightImg)
+}
+
+let legosiButton = document.createElement('button')
+let legosiImg = document.createElement('img')
+legosiButton.textContent = "More Legosi!"
+legosiImg.src = "lego.gif"
+document.body.appendChild(legosiButton)
+legosiButton.addEventListener('click', legosi)
+function legosi () {
+    document.body.appendChild(legosiImg)
+}
