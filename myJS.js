@@ -301,3 +301,28 @@ trainLego.addEventListener('click', train)
 function train () {
     document.body.appendChild(trainLegoImg)
 }
+
+let famHouseButton = document.createElement('button')
+famHouseButton.textContent = "Google Images"
+document.body.appendChild(famHouseButton)
+famHouseButton.onclick = function fam () {
+    window.open('https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl')
+}
+
+let moreButton = document.createElement('button')
+moreButton.textContent = "Article"
+document.body.appendChild(moreButton)
+moreButton.addEventListener('click', funky)
+function funky () {
+    window.open("https://medium.com/")
+}
+
+let moreMoreMore = document.createElement('button')
+moreMoreMore.textContent = "Beastars ver 2.0"
+document.body.appendChild(moreMoreMore)
+let beastarsImg = document.createElement('img')
+beastarsImg.src = "louis.gif"
+moreMoreMore.addEventListener('click', louis)
+function louis () {
+    document.body.appendChild(beastarsImg)
+}
