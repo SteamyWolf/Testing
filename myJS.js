@@ -326,3 +326,13 @@ moreMoreMore.addEventListener('click', louis)
 function louis () {
     document.body.appendChild(beastarsImg)
 }
+
+let junoButton = document.createElement('button')
+junoButton.textContent = "Juno"
+document.body.appendChild(junoButton)
+let junoImg = document.createElement('img')
+junoImg.src = "junoo.gif"
+junoButton.addEventListener('click', add)
+function add () {
+    document.body.appendChild(junoImg)
+}
