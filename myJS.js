@@ -336,3 +336,4 @@ junoButton.addEventListener('click', add)
 function add () {
     document.body.appendChild(junoImg)
 }
+
